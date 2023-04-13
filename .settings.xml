@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <settings>
+	<localRepository>D:\data\mvnRepo</localRepository>
 	<servers>
 		<server>
 			<id>repo.spring.io</id>
@@ -17,6 +18,7 @@
 			-->
 			<id>spring</id>
 			<activation>
+				<!--idea 的maven setting中选中了当前的 settings.xml作为配置文件，因此依赖将会到 这个profile指定的仓库的地址拉取-->
 				<activeByDefault>true</activeByDefault>
 			</activation>
 			<repositories>
